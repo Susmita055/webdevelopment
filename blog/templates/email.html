@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+         <title>Send email</title>
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+   
+    <div class=" fixed-top float-start position-relative my=0container p-3 mb-2 bg-transparent text-dark p-3 mb-2 bg-dark text-white">
+       
+    <center class="fixed-top float-start position-absolute bg-secondary text-white ">
+        <h1 class = 'alert alert-success'>Subscribe Form</h1>
+        <h3 class="p-3 mb-2 bg-primary text-white" style = 'font-size: 50px;'>Achiever's Django Program
+    </h3>
+    <form method="POST" action="",enctype="multipart/form-data">
+        <!-- Very Important csrf Token -->
+        {% csrf_token %}
+        <div class = "form-group">
+            <p>
+            <h3>{{ form.as_p }}</h3>
+        </p>
+            <br>
+            <button type="submit" class="btn btn-secondary btn-outline-light bg-primary text-black ">submit</button>
+        </div>
+            </form>
+
+            
+        </center>
+    </div>
+    
+    <div class="fixed-top float-start position-absolute my=0">
+        <img src="https://source.unsplash.com/WLUHO9A_xik/1600x900" class="img-fluid img-thumbnail" alt="...">
+        </div>
+</body>
+</html>
